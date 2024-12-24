@@ -119,3 +119,11 @@ JBC Folder:
 Our model has predicted all the data as jailbreaking, so 0% attack succes rate for all LLMs.
 
 
+**Lastly Pair folder contains:
+/pair/helpfulness check_vicuna.ipynb
+/pair/helpfulness check_Llama.ipynb
+/pair/helpfulness check_gpt.ipynb
+
+These files check for those prompts that our model predicted as ambiguous harmful, how better the responses were in comparison with no caution. With caution always generates safe responses whereas, without caution has unsafe responses.
+
+
