@@ -126,4 +126,8 @@ Our model has predicted all the data as jailbreaking, so 0% attack succes rate f
 
 These files check for those prompts that our model predicted as ambiguous harmful, how better the responses were in comparison with no caution. With caution always generates safe responses whereas, without caution has unsafe responses.
 
+Same analysis has been done with our own data "ambiguous" predictions. The analysis is done at files:
+helpfulness check_Llama-500_prompts-With_caution.ipynb
+helpfulness check_Llama-500_prompts-Without_Caution.ipynb
+
 
