@@ -22,7 +22,7 @@ import os
 os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 
 
-token='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'
+token=''
 from transformers import AutoTokenizer, AutoModel
 
 # Login with API token
@@ -121,13 +121,13 @@ model = AutoModelForCausalLM.from_pretrained(
     model_name,
     quantization_config=bnb_config,
     device_map=device_map, 
-    use_auth_token='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'
+    use_auth_token=''
 )
 model.config.use_cache = False
 model.config.pretraining_tp = 1
 
 # Load LLaMA tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True, use_auth_token='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')
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True, use_auth_token='')
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 

@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer, AutoModel
-token='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'
+token='use your token'
 # Login with API token
 from huggingface_hub import login
 login(token=token)
@@ -10,7 +10,7 @@ from transformers import AutoTokenizer
 import transformers
 import torch
 
-model = "Sabia/summary_extractor"
+model = "Shagoto/security-aware-summarizer-main"
 
 
 tokenizer = AutoTokenizer.from_pretrained(model)
@@ -23,7 +23,7 @@ pipeline = transformers.pipeline(
 
 import pandas as pd
 
-df=pd.read_csv("/home/shagoto/my_codes/Dataset/part2/eval_2/eval_data_text_together.csv")
+df=pd.read_csv("../eval_2/eval_data_text_together.csv")
 df=df[200:300]
 df=df.reset_index(drop=True)
 from tqdm import tqdm  # Import tqdm for the progress bar

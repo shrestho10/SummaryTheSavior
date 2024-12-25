@@ -141,14 +141,14 @@ if compute_dtype == torch.float16 and use_4bit:
 
 
 
-token='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'
+token=''
 # Login with API token
 
 login(token=token)
 
 
 # Load the pre-trained model and tokenizer
-model_name = "Sabia/checkpoint-75000-harmful-keyword"
+model_name = "Shagoto/harmful-keyword-extractor"
 
 
 # Load base model
@@ -229,7 +229,7 @@ def process_in_batches(df, batch_size=8):
     return pd.concat(results)
 
 df_shuffled_eval = process_in_batches(df_shuffled_eval)
-df_shuffled_eval.to_csv('validation_prediction_4.csv', index=False)
+df_shuffled_eval.to_csv('predicted_keywords_by_our_llama.csv', index=False)
 
 
 

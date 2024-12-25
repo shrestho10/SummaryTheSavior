@@ -36,7 +36,7 @@ print(dataset['text'][40])
 
 
 
-token='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'
+token=''
 
 from transformers import AutoTokenizer, AutoModel
 
@@ -60,7 +60,7 @@ import torch
 
 
 # Load the pre-trained model and tokenizer
-model_name = "Shagoto/security-aware-summarizer" 
+model_name = "Shagoto/harmful-keyword-extractor" 
 
 
 import os
