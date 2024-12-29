@@ -1,0 +1,10 @@
+
+
+Here in the classification folder:
+ML files are for the ml classifiers classying the prompts and summaries of our training, evaluation and unseen test data.
+
+DNN files are for the DNN classifiers classying the prompts and summaries of our training, evaluation and unseen test data.
+
+
+Here PAIR, GCG, RS AND JBC are old evaluations results.
+New results are found at: 
