@@ -1,3 +1,5 @@
+new eval at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation
+
 *** This is the old evaluation***
 
 The original dataset of JBB are:
