@@ -148,7 +148,7 @@ login(token=token)
 
 
 # Load the pre-trained model and tokenizer
-model_name = "Shagoto/harmful-keyword-extractor"
+model_name = "Sabia/llama-2-tokenizer"
 
 
 # Load base model
