@@ -10,7 +10,7 @@ from transformers import AutoTokenizer
 import transformers
 import torch
 
-model = "Shagoto/security-aware-summarizer-main"
+model = "Sabia/summary_extractor"
 
 
 tokenizer = AutoTokenizer.from_pretrained(model)
