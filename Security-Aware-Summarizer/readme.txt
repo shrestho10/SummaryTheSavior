@@ -33,3 +33,5 @@ Classification scores utilizing Summaries on training and eval data with both ML
 Eval scores of JBB EVAL dataset and their predictions for both ML and DNN utilizing summaries.
 
 The predictions are saved in eval_2 folder where further analysis has been done where we see utilizing the Llama guard that the benign and ambiguous prediction responses by various LLMs ARE SAFE OR NOT. new evlatuation files: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation
+
+Rejection evaluation for wil jailbreak will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval
