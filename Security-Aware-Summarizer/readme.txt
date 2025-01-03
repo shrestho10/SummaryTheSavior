@@ -37,6 +37,6 @@ The predictions are saved in eval_2 folder where further analysis has been done 
 Rejection evaluation for wild jailbreak first 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval
 Rejection evaluation for wild jailbreak 2nd 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval2
 And the wild redteaming train.tsv file will be found at https://huggingface.co/datasets/allenai/wildjailbreak/tree/main
-and new eval dataset will be found at: 
+and new eval dataset will be found at: https://huggingface.co/datasets/Shagoto/Llama3.1-70B-Summary-Data/tree/main/new_Eval_data
 
 Our summary extractor will be found at: https://huggingface.co/Sabia/summary_extractor
