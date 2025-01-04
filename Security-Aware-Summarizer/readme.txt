@@ -1,7 +1,8 @@
 
 finetune.py file has been used to finetune llama-2 7b model to be trained on the dataset created by us.
-The dataset folder is Security-Aware-Summarizer/Data Generation/Data Mix/mix and final dataset for finetune and eval
-Inside the Security-Aware-Summarizer/Data Generation/Data Mix/mix and final dataset for finetune and eval folder we have the 
+The dataset folder is Data Generation
+
+Inside the Security-Aware-Summarizer/Data Generation/Data Mix/mix and final dataset for finetune and eval --> folder we have the 
 harmful mix 30k data which contains the mixture of harmful prompts and queries
 harmless mix 30k data which contains the mixture of harmless prompts and queries
 ambiguous mix 30k data which contains the mixture of ambiguous prompts and queries
@@ -22,7 +23,7 @@ similarly the eval folder has there unseen eval data for each of the categories.
 
 So the final file for evaluations that has been used here is "new_eval_dataset_800_token"
 
-In folder "new_Eval_data" we have got our results for the generated summaries for the unseen eval data and their ROUGE AND BERT Scores.
+In folder "new_Eval_data" we have got our results for the finetuned model's generated summaries for the unseen eval data and their ROUGE AND BERT Scores.
 
 
 In Classification folder we have
