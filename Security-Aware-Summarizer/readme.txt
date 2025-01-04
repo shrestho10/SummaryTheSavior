@@ -23,6 +23,8 @@ similarly the eval folder has there unseen eval data for each of the categories.
 
 So the final file for evaluations that has been used here is "new_eval_dataset_800_token"
 
+These csv files and all output csv files for Data Generation Folder will be found at : https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data
+
 In folder "new_Eval_data" we have got our results for the finetuned model's generated summaries for the unseen eval data and their ROUGE AND BERT Scores.
 
 
