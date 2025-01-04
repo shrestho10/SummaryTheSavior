@@ -34,9 +34,9 @@ In Classification folder we have
 Classification scores utilizing prompts on training and eval data with both ML and DNN
 Classification scores utilizing Summaries on training and eval data with both ML and DNN
 
-Eval scores of JBB EVAL dataset and their predictions for both ML and DNN utilizing summaries --> old files*******
+Eval scores of JBB EVAL dataset and their predictions for both ML and DNN utilizing summaries --> ML Ffor pair, rs, jbc and  gcg are old files*******
 
-The evaluation of JBB Dataset is at --> ew evlatuation files: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation
+The new evaluation of JBB Dataset is at --> ew evlatuation files: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation
 
 Rejection evaluation for wild jailbreak first 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval
 Rejection evaluation for wild jailbreak 2nd 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval2
