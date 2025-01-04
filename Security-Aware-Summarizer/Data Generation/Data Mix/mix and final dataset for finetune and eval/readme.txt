@@ -1,0 +1,2 @@
+In this repo, we mix the respective prompts with their respective questions and generate final dataset with 800 tokens for GPU constraints.
+The harmful, harmless and ambiguous prompts and questions are in previous dataset folder.
