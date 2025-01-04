@@ -29,7 +29,7 @@ from transformers import AutoTokenizer, AutoModel
 from huggingface_hub import login
 login(token=token)
 
-filtered_df=pd.read_csv("./90k/for_finetune_90k data_till_800_tokens.csv")
+filtered_df=pd.read_csv(".for_finetune_90k data_till_800_tokens.csv")
 # Load datasets
 dataset = filtered_df
 
