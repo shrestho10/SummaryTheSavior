@@ -1,7 +1,7 @@
 
 finetune.py file has been used to finetune llama-2 7b model to be trained on the dataset created by us.
-The dataset folder is 90K
-Inside the 90K folder we have the 
+The dataset folder is Security-Aware-Summarizer/Data Generation/Data Mix/mix and final dataset for finetune and eval
+Inside the Security-Aware-Summarizer/Data Generation/Data Mix/mix and final dataset for finetune and eval folder we have the 
 harmful mix 30k data which contains the mixture of harmful prompts and queries
 harmless mix 30k data which contains the mixture of harmless prompts and queries
 ambiguous mix 30k data which contains the mixture of ambiguous prompts and queries
@@ -15,7 +15,7 @@ ambiguous_mix-Copy1.ipynb
 After adding all the data, we used texts that were 800 tokens for GPU memory considerations.
 So the final file for finetunning that has been used here is "for_finetune_90k data_till_800_tokens.csv"
 
-Untitled5-90K.ipynb file has the procedure to select instacnes within 800 tokens.
+training data generation 800 tokens.ipynb file has the procedure to select instacnes within 800 tokens.
 
 
 similarly the eval folder has there unseen eval data for each of the categories.
