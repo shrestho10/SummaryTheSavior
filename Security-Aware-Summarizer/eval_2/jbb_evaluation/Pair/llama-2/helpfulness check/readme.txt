@@ -1,0 +1,1 @@
+This file created from pair attack on gpt 3.5 and then applied on llama2 to get ambiguous data,  since normal pair data had prompt null and only goals, so we utilized the prompts for gpt 3.5 pair to illustrate the performance of pair data on llama2--> this is for this helpfulness check only, where we provide how good this additional class introduction is.
