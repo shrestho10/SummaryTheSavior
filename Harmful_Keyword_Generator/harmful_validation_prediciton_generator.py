@@ -141,7 +141,7 @@ if compute_dtype == torch.float16 and use_4bit:
 
 
 
-token='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'
+token=''
 # Login with API token
 
 login(token=token)
