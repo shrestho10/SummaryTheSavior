@@ -26,8 +26,8 @@ So the final file for evaluations that has been used here is "new_eval_dataset_8
 
 These csv files and all output csv files for Data Generation Folder will be found at : https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data
 
-In folder "new_Eval_data" we have got our results for the finetuned model's generated summaries for the unseen eval data and their ROUGE AND BERT Scores.
-Output files for this folder will be found at: https://huggingface.co/datasets/Shagoto/Llama3.1-70B-Summary-Data/tree/main/new_Eval_data
+In folder "new_Eval_data" we have got our results for the finetuned model's generated summaries for the unseen eval data and their ROUGE AND BERT Scores. The data will be found here:
+https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data
 
 In Classification folder we have
 
