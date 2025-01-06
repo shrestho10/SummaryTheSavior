@@ -1,1 +1,4 @@
-txt
+ML Summary Classify files are used to classify the prompts
+Accuracy, precision and other scores are not needed in these files
+Here we only predict among all the data how much we predicted as harmful, harmless and ambiguous
+Since jailbreak are blocked, then we check the safety of benign and ambiguous prompts (caution) by sending them to LLMs and the analysis is done on LLM(particular)response_safety_check--> so these files has the result explaining how the attack sucees rate of these methods are for our defense.
