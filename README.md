@@ -6,8 +6,8 @@
 ---
 
 [![Paper](https://img.shields.io/badge/Paper-Read-blue)](https://link-to-paper.com)
-[![Hamrful Keyword Extractor]([https://img.shields.io/badge/1-Link-green)](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer)
-[![Security Aware Summarizer](https://img.shields.io/badge/2-Link-orange)](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer)
+[![Keyword Extractor]([https://img.shields.io/badge/1-Link-green)](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer)
+[![Summarizer](https://img.shields.io/badge/2-Link-orange)](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer)
 
 ---
 
