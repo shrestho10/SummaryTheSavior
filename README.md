@@ -1,4 +1,4 @@
-# Summary the Savior: Harmful Keyword-Query assisted Security-Aware-Summary-based Jailbreak Defense
+# Summary the Savior: Harmful Keyword and Query-based Summarization for LLM Jailbreak Defense
 
 
 ![Project Banner](https://github.com/shrestho10/SummaryTheSavior/blob/main/for%20figures%20in%20paper/fig1forpaper.drawio%20(2).png)
