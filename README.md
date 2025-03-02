@@ -1,7 +1,7 @@
 # Summary the Savior: Harmful Keyword-Query assisted Security-Aware-Summary-based Jailbreak Defense
 
 
-![Project Banner](https://github.com/shrestho10/SummaryTheSavior/blob/main/for%20figures%20in%20paper/detailed_method.drawio%20(1).png)
+![Project Banner](https://github.com/shrestho10/SummaryTheSavior/blob/main/for%20figures%20in%20paper/fig1forpaper.drawio%20(2).png)
 
 ---
 
