@@ -6,8 +6,8 @@
 ---
 
 [![Paper](https://img.shields.io/badge/Paper-Read-blue)](https://link-to-paper.com)
-[![Keyword Extractor](https://img.shields.io/badge/Keyword-Extractor-green)](https://huggingface.co/Sabia/llama-2-tokenizer)
-[![Summarizer](https://img.shields.io/badge/Summarizer-Tool-orange)](https://huggingface.co/Sabia/summary_extractor)
+[![Harmful Keyword Extractor](https://img.shields.io/badge/Keyword-Extractor-green)](https://huggingface.co/Sabia/llama-2-tokenizer)
+[![Security Aware Summarizer](https://img.shields.io/badge/Summarizer-Tool-orange)](https://huggingface.co/Sabia/summary_extractor)
 
 ---
 
