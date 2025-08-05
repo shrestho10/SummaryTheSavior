@@ -1,44 +1,106 @@
+# 🛡️ Security-Aware Summarization using LLaMA-2
 
-finetune.py file has been used to finetune llama-2 7b model to be trained on the dataset created by us.
-The dataset folder is Data Generation --> https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/Data%20Generation
-We will se the data collection and generation process and details in that folder
+This repository contains the full pipeline for **fine-tuning LLaMA-2 7B** on a carefully curated dataset of **harmful**, **harmless**, and **ambiguous** prompts for security-aware summarization. The project includes data generation, filtering, fine-tuning, evaluation, and classification stages.
 
-Inside the https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/Data%20Generation/Data%20Mix/mix%20and%20final%20dataset%20for%20finetune%20and%20eval --> folder we have the 
-harmful mix 30k data which contains the mixture of harmful prompts and queries
-harmless mix 30k data which contains the mixture of harmless prompts and queries
-ambiguous mix 30k data which contains the mixture of ambiguous prompts and queries
+---
+
+## 📂 Repository Overview
+
+| Folder/File | Description |
+|-------------|-------------|
+| `finetune.py` | Fine-tunes LLaMA-2 7B on the final dataset (`for_finetune_90k data_till_800_tokens.csv`) |
+| `Data Generation/` | Contains dataset creation and merging scripts |
+| `Classification/` | Contains classification scores on prompts and summaries using ML/DNN models |
+| `eval_2/jbb_evaluation/` | Evaluation results on the JBB dataset |
+| `wiljailbreak_eval/` | Rejection evaluation on wild jailbreak (first 100 samples) |
+| `wiljailbreak_eval2/` | Rejection evaluation on wild jailbreak (second 100 samples) |
+
+---
+
+## 🧪 Dataset
+
+All data files (intermediate and final) are hosted at:  
+📦 [Shagoto/Data-Generation-Summary](https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data)
+
+### 📁 Data Generation Folder
+
+📍 Location:  
+[Data Generation](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/Data%20Generation)
+
+This contains:
+
+- 🔴 `harmful mix 30k` → Harmful prompts + queries  
+- 🟢 `harmless mix 30k` → Harmless prompts + queries  
+- 🟡 `ambiguous mix 30k` → Ambiguous prompts + queries  
+
+### 📓 Analysis Notebooks
+
+- `harmful_mix.ipynb`
+- `harmless_mix.ipynb`
+- `ambiguous_mix-Copy1.ipynb`
+
+These notebooks analyze the composition and structure of each dataset category.
+
+---
+
+## 🧠 Fine-Tuning Setup
+
+### 📁 Final Training Data
+
+We restricted prompts to a max of **800 tokens** to fit GPU memory constraints.
+
+- Final file used:  
+  ✅ `for_finetune_90k data_till_800_tokens.csv`  
+- Generation script:  
+  📓 `training data generation 800 tokens.ipynb`
+
+### 📁 Final Evaluation Data
+
+- Final file used:  
+  ✅ `new_eval_dataset_800_token`  
+- Evaluated using ROUGE and BERTScore.
+
+### 📍 Location of Eval Results
+
+All results and generated summaries are at:  
+📦 [Eval Dataset Results](https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data)
+
+---
+
+## 📊 Classification
+
+The `Classification` folder contains:
+
+- 🔍 Classification scores using **original prompts** (Train & Eval)  
+- 🧠 Classification scores using **generated summaries** (Train & Eval)  
+- Models: Classical ML + Deep Neural Networks
+
+---
+
+## 🔬 External Evaluations
+
+| Dataset | Location |
+|--------|----------|
+| **JBB Evaluation** | [eval_2/jbb_evaluation](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation) |
+| **Wild Jailbreak Eval 1** | [wiljailbreak_eval](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval) |
+| **Wild Jailbreak Eval 2** | [wiljailbreak_eval2](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval2) |
+| **Wild Jailbreak Train File** | [allenai/wildjailbreak](https://huggingface.co/datasets/allenai/wildjailbreak/tree/main) |
+
+---
+
+## 📦 Final Summarization Model
+
+The trained summarization model is hosted at:  
+🔗 [Sabia/summary_extractor](https://huggingface.co/Sabia/summary_extractor)
+
+---
+
+## 📌 Notes
+
+- The full pipeline is LLaMA-2 based with token length optimization for compute efficiency.
+- Custom datasets were created and balanced to evaluate summarization safety and ambiguity.
+- Multiple evaluations were conducted to ensure robustness against jailbreak and adversarial prompts.
+
+---
 
 
-ipynb files for the analysis:
-harmless_mix.ipynb
-harmful_mix.ipynb
-ambiguous_mix-Copy1.ipynb
-
-After adding all the data, we used texts that were 800 tokens for GPU memory considerations.
-So the final file for finetunning that has been used here is "for_finetune_90k data_till_800_tokens.csv"
-
-training data generation 800 tokens.ipynb file has the procedure to select instacnes within 800 tokens.
-
-
-similarly the eval folder has there unseen eval data for each of the categories.
-
-So the final file for evaluations that has been used here is "new_eval_dataset_800_token"
-
-These csv files and all output csv files for Data Generation Folder will be found at : https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data
-
-In folder "new_Eval_data" we have got our results for the finetuned model's generated summaries for the unseen eval data and their ROUGE AND BERT Scores. The data will be found here:
-https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data
-
-In Classification folder we have
-
-Classification scores utilizing prompts on training and eval data with both ML and DNN
-Classification scores utilizing Summaries on training and eval data with both ML and DNN
-
-
-The evaluation of JBB Dataset is at --> ew evlatuation files: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/eval_2/jbb_evaluation
-
-Rejection evaluation for wild jailbreak first 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval
-Rejection evaluation for wild jailbreak 2nd 100 data will be found at: https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/wiljailbreak_eval2
-And the wild redteaming train.tsv file will be found at https://huggingface.co/datasets/allenai/wildjailbreak/tree/main
-
-Our summary extractor will be found at: https://huggingface.co/Sabia/summary_extractor
