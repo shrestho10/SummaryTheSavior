@@ -48,7 +48,7 @@ Notebook: `training data generation 800 tokens.ipynb`
 
 - Final eval file: `new_eval_dataset_800_token`  
 - Evaluation Metrics: ROUGE, BERTScore  
-- Result folder: `new_Eval_data`
+- Result folder: `new_Eval_data` [Link](https://github.com/shrestho10/SummaryTheSavior/tree/main/Security-Aware-Summarizer/new_Eval_data)
 
 📦 [Eval Data & Results](https://huggingface.co/datasets/Shagoto/Data-Generation-Summary/tree/main/After%20Data%20Generation%20Data)
 
